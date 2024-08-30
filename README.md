@@ -70,8 +70,7 @@ Returns a response containing the list of cryptocurrencies
         "BTC": {
         .....
         }
-    }
-},
+    },
 ....
 ]
 }
