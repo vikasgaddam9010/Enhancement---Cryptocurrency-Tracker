@@ -1,0 +1,38 @@
+.bg-container {
+  background-color: #000000;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  color: #00e7ff;
+  text-align: center;
+}
+.crypto-logo {
+  height: 200px;
+  width: 680px;
+  margin: 30px;
+}
+.bg-crypto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .bg-container {
+    width: 100%;
+  }
+  .head {
+    font-size: 18px;
+  }
+  .crypto-logo {
+    height: 200px;
+    width: 70%;
+  }
+}
