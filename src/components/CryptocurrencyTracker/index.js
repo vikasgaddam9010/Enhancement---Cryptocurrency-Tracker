@@ -6,6 +6,8 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import './index.css'
 
 class CryptocurrencyTracker extends Component {
+  state = {cryptoList: [], isLoaderActive: true}
+
   state = {cryptoList: [], isLoaderActive: true, sorteing: '-'}
 
   componentDidMount() {
