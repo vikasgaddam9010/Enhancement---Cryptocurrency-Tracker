@@ -15,7 +15,7 @@ const CrptocurrenciesList = props => {
     )
 
   return (
-    <div>
+    <>
       <div className="table-container d-flex">
         <div style={{display: 'flex'}}>
           <p
@@ -38,19 +38,27 @@ const CrptocurrenciesList = props => {
           <p style={{width: '100px'}}>Price</p>
         </div>
         <div style={{display: 'flex'}}>
-          <p style={{width: '70px'}}>1H</p>
+          <p className="d-none-sm" style={{width: '70px'}}>
+            1H
+          </p>
           <p style={{width: '70px'}}>24H</p>
-          <p style={{width: '70px'}}>7d</p>
+          <p className="d-none-sm" style={{width: '70px'}}>
+            7d
+          </p>
         </div>
-        <p style={{width: '150px'}}>24h Volume</p>
-        <p style={{width: '150px'}}>Market Cap</p>
+        <p className="d-none-sm" style={{width: '150px'}}>
+          24h Volume
+        </p>
+        <p className="d-none-sm" style={{width: '150px'}}>
+          Market Cap
+        </p>
       </div>
       <ul className="ul-css">
         {cryptoList.map(eachItem => (
           <CryptocurrencyItem key={eachItem.id} eachItem={eachItem} />
         ))}
       </ul>
-    </div>
+    </>
   )
 }
 export default CrptocurrenciesList

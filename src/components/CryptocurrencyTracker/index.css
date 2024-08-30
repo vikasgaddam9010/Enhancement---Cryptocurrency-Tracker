@@ -15,7 +15,7 @@
 .crypto-logo {
   height: 200px;
   width: 680px;
-  margin: 30px;
+  margin: 0px 30px;
 }
 .bg-crypto {
   width: 100%;
@@ -26,13 +26,16 @@
 }
 @media (max-width: 576px) {
   .bg-container {
-    width: 100%;
+    min-width: 550px;
   }
   .head {
     font-size: 18px;
   }
   .crypto-logo {
     height: 200px;
+    margin-bottom: 50px;
     width: 70%;
   }
 }
+
+//ccbp publish RJSCPUAF4D vikascryptotrk.ccbp.tech

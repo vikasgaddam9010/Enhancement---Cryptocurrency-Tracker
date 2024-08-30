@@ -31,28 +31,30 @@ const CryptocurrencyItem = props => {
 
   return (
     <li className="li-css-list di-flex-list">
-      <div className="type-coin-list d-flex">
-        <div style={{display: 'flex'}}>
-          <p style={{width: '50px', marginRight: '15px'}}>{eachItem.id}</p>
-        </div>
-        <div style={{display: 'flex'}}>
-          <p style={{width: '150px'}}>{eachItem.name}</p>
-          <p style={{width: '100px'}}>${price.toFixed(2)}</p>
-        </div>
-        <div style={{display: 'flex'}}>
-          <p style={{width: '70px', color: color1h}}>
-            {percentChange1h.toFixed(2)}
-          </p>
-          <p style={{width: '70px', color: color24H}}>
-            {percentChange24h.toFixed(2)}
-          </p>
-          <p style={{width: '70px', color: color7d}}>
-            {percentChange7d.toFixed(2)}
-          </p>
-        </div>
-        <p style={{width: '150px'}}>{volume24h.toFixed(2)}</p>
-        <p style={{width: '150px'}}>{marketCap.toFixed(2)}</p>
+      <div style={{display: 'flex'}}>
+        <p style={{width: '50px', marginRight: '15px'}}>{eachItem.id}</p>
       </div>
+      <div style={{display: 'flex'}}>
+        <p style={{width: '150px'}}>{eachItem.name}</p>
+        <p style={{width: '100px'}}>${price.toFixed(2)}</p>
+      </div>
+      <div style={{display: 'flex'}}>
+        <p className="d-none-sm" style={{width: '70px', color: color1h}}>
+          {percentChange1h.toFixed(2)}
+        </p>
+        <p style={{width: '70px', color: color24H}}>
+          {percentChange24h.toFixed(2)}
+        </p>
+        <p className="d-none-sm" style={{width: '70px', color: color7d}}>
+          {percentChange7d.toFixed(2)}
+        </p>
+      </div>
+      <p className="d-none-sm" style={{width: '150px'}}>
+        {volume24h.toFixed(2)}
+      </p>
+      <p className="d-none-sm" style={{width: '150px'}}>
+        {marketCap.toFixed(2)}
+      </p>
     </li>
   )
 }

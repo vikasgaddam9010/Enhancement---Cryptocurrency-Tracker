@@ -15,7 +15,7 @@ class CryptocurrencyTracker extends Component {
   }
 
   getCryptoList = async () => {
-    const url1 = `http://localhost:3000/api/cryptocurrency/`
+    const url1 = `https://cryptocurrency-tracker-backed.onrender.com/api/cryptocurrency/`
     const apiRes = await fetch(url1)
 
     if (apiRes.ok) {

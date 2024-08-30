@@ -1,37 +1,15 @@
 .li-css-list {
   width: 900px;
-}
-.d-flex-list {
-  display: flex;
-  align-items: center;
+
+  padding: 0px 20px;
 }
 .di-flex-list {
   display: flex;
   justify-content: space-between;
 }
-.type-coin-list {
-  width: 900px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.img-coin-list {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
 
 @media (max-width: 576px) {
   .li-css-list {
-    width: 470px;
-  }
-  .type-coin-list {
-    flex-shrink: 0;
-    width: 300px;
-  }
-  .euro {
-    display: none;
+    width: 100%;
   }
 }

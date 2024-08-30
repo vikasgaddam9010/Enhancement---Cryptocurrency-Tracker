@@ -1,7 +1,6 @@
 .ul-css {
   color: #ffffff;
   padding: 0px;
-  width: 900px;
   list-style-type: none;
 }
 .d-flex {
@@ -9,10 +8,10 @@
   justify-content: space-between;
 }
 .table-container {
-  margin: 20px;
+
   border: 2px solid #00e7ff;
-  border-radius: 20px;
   width: 900px;
+  border-radius: 20px;
   color: white;
   padding: 0px 20px;
 }
@@ -38,13 +37,16 @@
 }
 
 @media (max-width: 576px) {
-  .coin-usd {
-    width: 300px;
+  .d-none-sm {
+    display: none;
+  }
+  .ul-css {
+    width: 100%;
   }
   .table-container {
     width: 100%;
   }
-  .eoru {
+  . .eoru {
     display: none;
   }
 }
