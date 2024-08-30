@@ -47,9 +47,9 @@ The app must have the following functionalities
 <summary>API Requests & Responses</summary>
 <br/>
 
-**cryptocurrenciesApiUrl**
+**cryptocurrencies Api From CoinmarketCap**
 
-#### API: `https://apis.ccbp.in/crypto-currency-converter`
+#### API: `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`
 
 #### Method: `GET`
 
@@ -60,16 +60,21 @@ Returns a response containing the list of cryptocurrencies
 #### Response
 
 ```json
-[
-  {
-    "currency_name": "Bitcoin",
-    "usd_value": "46750.63",
-    "euro_value": "39596.07",
-    "id": "6e937df9-1345-4c2f-8ace-babff0e5108f",
-    "currency_logo": "https://www.cryptocompare.com/media/19633/btc.png"
-  },
-  ...
+{
+"data": [
+    {
+    "id": 1,
+    "name": "Bitcoin",
+    "cmc_rank": 5,
+        ....
+        "BTC": {
+        .....
+        }
+    }
+},
+....
 ]
+}
 ```
 
 </details>
